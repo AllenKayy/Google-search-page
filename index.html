@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1a46ff0799.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>      
+      <div class="searchbar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" class="dinput" placeholder="cristiano ronaldo" />
+        <svg class="search-icon" alt= "" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#4285f4" d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"></path><path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path><path fill="#fbbc05" d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"></path><path fill="#ea4335" d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z"></path></svg>
+        <svg class="search-icon" alt= "" focusable="false" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg"><rect fill="none" height="192" width="192"></rect><g><circle fill="#4285f4" cx="96" cy="104.15" r="28"></circle><path fill="#ea4335" d="M160,72v40.15V136c0,1.69-0.34,3.29-0.82,4.82v0v0c-1.57,4.92-5.43,8.78-10.35,10.35h0v0 c-1.53,0.49-3.13,0.82-4.82,0.82H66l16,16h50h12c4.42,0,8.63-0.9,12.46-2.51c3.83-1.62,7.28-3.96,10.17-6.86 c1.45-1.45,2.76-3.03,3.91-4.74c2.3-3.4,3.96-7.28,4.81-11.44c0.43-2.08,0.65-4.24,0.65-6.45v-12V96.15V84l-6-19l-10.82,2.18 C159.66,68.71,160,70.31,160,72z"></path><path fill="#4285f4" d="M32,72c0-1.69,0.34-3.29,0.82-4.82c1.57-4.92,5.43-8.78,10.35-10.35C44.71,56.34,46.31,56,48,56 h96c1.69,0,3.29,0.34,4.82,0.82c0,0,0,0,0,0L149,45l-17-5l-16-16h-13.44H96h-6.56H76L60,40H48c-17.67,0-32,14.33-32,32v12v20l16,16 V72z"></path><path fill="#34a853" d="M144,40h-12l16.83,16.83c1.23,0.39,2.39,0.93,3.47,1.59c2.16,1.32,3.97,3.13,5.29,5.29 c0.66,1.08,1.2,2.24,1.59,3.47v0L176,84V72C176,54.33,161.67,40,144,40z"></path><path fill="#fbbc05" d="M48,168h39.89l-16-16H48c-8.82,0-16-7.18-16-16v-23.89l-16-16V136C16,153.67,30.33,168,48,168z"></path></g></svg>
+      </div>
+      <nav >
+        <div class="bignav stickyy" >
+          <span class="bignav1">
+          <img src="images/google-logo.png" class="google-logo">
+          <div class="desktopsearchbar">
+            <input type="text" class="dinput" placeholder="Cristiano Ronaldo" />
+            <img src="images/x.svg" alt="" class="desktop-logo">
+            <span class="Rlogo">
+            <svg class="search-icon" alt="" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#4285f4" d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"></path><path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path><path fill="#fbbc05" d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"></path><path fill="#ea4335" d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z"></path></svg>
+            <svg class="search-icon" alt="" focusable="false" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg"><rect fill="none" height="192" width="192"></rect><g><circle fill="#4285f4" cx="96" cy="104.15" r="28"></circle><path fill="#ea4335" d="M160,72v40.15V136c0,1.69-0.34,3.29-0.82,4.82v0v0c-1.57,4.92-5.43,8.78-10.35,10.35h0v0 c-1.53,0.49-3.13,0.82-4.82,0.82H66l16,16h50h12c4.42,0,8.63-0.9,12.46-2.51c3.83-1.62,7.28-3.96,10.17-6.86 c1.45-1.45,2.76-3.03,3.91-4.74c2.3-3.4,3.96-7.28,4.81-11.44c0.43-2.08,0.65-4.24,0.65-6.45v-12V96.15V84l-6-19l-10.82,2.18 C159.66,68.71,160,70.31,160,72z"></path><path fill="#4285f4" d="M32,72c0-1.69,0.34-3.29,0.82-4.82c1.57-4.92,5.43-8.78,10.35-10.35C44.71,56.34,46.31,56,48,56 h96c1.69,0,3.29,0.34,4.82,0.82c0,0,0,0,0,0L149,45l-17-5l-16-16h-13.44H96h-6.56H76L60,40H48c-17.67,0-32,14.33-32,32v12v20l16,16 V72z"></path><path fill="#34a853" d="M144,40h-12l16.83,16.83c1.23,0.39,2.39,0.93,3.47,1.59c2.16,1.32,3.97,3.13,5.29,5.29 c0.66,1.08,1.2,2.24,1.59,3.47v0L176,84V72C176,54.33,161.67,40,144,40z"></path><path fill="#fbbc05" d="M48,168h39.89l-16-16H48c-8.82,0-16-7.18-16-16v-23.89l-16-16V136C16,153.67,30.33,168,48,168z"></path></g></svg>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          </div>
+        </span>
+          <div class="bignav2">
+            <img src="images/setting.svg" style="height: 25px; width: 25px;" alt="settings logo" class="large-logo">
+            <img src="images/application.svg" style="height: 25px; width: 25px;" alt="Applications logo" class="large-logo">
+             <img style="height: 37px; width: 37px; border-radius: 50%;" src="images/profile2.jpg" alt="">
+          </div>
+        </div>
+        
+        <ul class="desktop-nav">
+          <li>
+            <svg focusable="false" viewBox="0 0 24 24"><path fill="#34a853" d="M10 2v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8"></path><path fill="#ea4335" d="M10 4V2a8 8 0 0 0-8 8h2c0-3.3 2.7-6 6-6"></path><path fill="#fbbc04" d="M4 10H2a8 8 0 0 0 8 8v-2c-3.3 0-6-2.69-6-6"></path><path fill="#4285f4" d="M22 20.59l-5.69-5.69A7.96 7.96 0 0 0 18 10h-2a6 6 0 0 1-6 6v2c1.85 0 3.52-.64 4.88-1.68l5.69 5.69L22 20.59"></path></svg>
+            <a href="" id="active">All</a>
+          </li>
+          <li>
+            <svg focusable="false" viewBox="0 0 24 24"><path d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2"></path></svg>
+            <a href="">News</a>
+          </li>
+          <li>
+            <svg focusable="false" viewBox="0 0 24 24"><path d="M14 13l4 5H6l4-4 1.79 1.78L14 13zm-6.01-2.99A2 2 0 0 0 8 6a2 2 0 0 0-.01 4.01zM22 5v14a3 3 0 0 1-3 2.99H5c-1.64 0-3-1.36-3-3V5c0-1.64 1.36-3 3-3h14c1.65 0 3 1.36 3 3zm-2.01 0a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h7v-.01h7a1 1 0 0 0 1-1V5"></path></svg> 
+            <a href="">Images</a>
+          </li>
+          <li>
+            <svg focusable="false" viewBox="0 0 24 24"><path d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5"></path></svg>
+            <a href="">Videos</a>
+          </li>
+          <li>
+            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+            <a href="">More</a>
+          </li>
+          <li>
+            <a href="#" class="tools">Tools</a>
+          </li>
+        </ul>
+      </nav>
+      <span class="bignav-grey">
+        <p>
+        About 255,000,000 results (0.65 seconds) 
+      </p>
+      </span>
+      <div class="header-content">
+        <div class="name">
+          <p>Cristiano Ronaldo</p>
+          <p class="small">Portuguese footballer</p>
+        </div>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+        <span class="bell-icon">
+          <i class="fa-regular fa-bell"></i>
+        </span>
+      </div>
+
+      <div class="desktop-header-content">
+        <img src="images/cr71.jpeg" alt=" Portrait of Cristiano Ronaldo">
+        <div class="name">
+          <p>Cristiano Ronaldo</p>
+          <span class="name-info">
+          <p class="small">Portuguese footballer</p>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </span>
+        </div>
+        <div class="desktop-stats">
+          <a href="" class="stats"> Overview</a>
+          <a href="" class="stats">Stats</a>
+          <a href="" class="stats">Videos</a>
+          <a href="" class="stats">Matches</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="sticky">
+      <div class="sticky-list">
+        <a href="" class="stats"> Overview</a>
+        <a href="" class="stats">Stats</a>
+        <a href="" class="stats">Videos</a>
+        <a href="" class="stats">Matches</a>
+      </div>
+    </section>
+    
+    <main>
+      <section class="desktop-main">
+        <div class="desktop-main1">
+          <section class="desktop-bio">
+            <div class="desktop-bio-wrapper">
+            <div class="bioimages bio-cards-details">
+              <img style="object-fit: cover;" src="images/cr73.jpeg" alt="">
+            </div>
+            <div class="bio-cards-details">
+              <div class="bio-card2">
+              <a href= "#" target="_blank" >
+                <div class="bio-img">
+                <img src="images/ES-CR7.jpeg" alt="Cristiano Ronaldo" />
+                <i class="fa-regular fa-circle-play"></i>
+              </div>
+            </a>
+            <img src="images/skySport.png" alt="" class="bio-logo">
+                <p>Cristiano Ronaldo: I hope he stays in Premier League,...</p>
+              </div>
+              <div class="bio-card2">
+                <a href="#" target="_blank" >
+                <div class="bio-img">
+                  <img src="images/cr77.jpeg" alt="Mirror" />
+                  <i class="fa-regular fa-circle-play"></i>
+                </div>
+              </a>
+              <img src="images/mirror-logo.jpeg" alt="" class="bio-logo">
+                <p>Cristiano Ronaldo - latest news, net worth and boot...</p>
+              </div>
+            </div>
+          </div>
+          </section>
+
+          <section class="desktop-news">
+            <h4>Top stories</h4>
+            <p>News about Cristiano Ronaldo</p>
+        <div class="cards">
+          <div class="desktopcard">
+            <div class="desktopcard-img">
+              <img src="images/cr78.jpeg" alt="sky sport video" class="card-image" />
+            </div>
+            <img src="images/skySport.png" alt="skySport logo" class="card-logo">
+            <div class="card-msg">
+              <p class="blue">
+                Christiano Ronaldo called out by Karim Benzema's personal trainer over Real...
+              </p>
+              <span class="grey">4 hours ago</span>
+          </div>
+          </div>
+          <div class="cards2">
+            <div class="desktop-card">
+              <div class="desktop-card-info">
+              <img src="images/EveningNews.png" alt="Evening standard" class="card-logo">
+                <p class="blue">
+                      Al-Nassr midfielder opens up on Ronaldo taking his <br>No. 7 Jersey
+                </p>
+                <span class="grey">2 hours ago</span>
+              </div>
+                <img src="images/ronniearab.jpg" alt="" class="desktop-card-img" />
+            </div>
+
+            <div class="desktop-card">
+              <div class="desktop-card-info">
+                <img src="images/Daily post.jpg" alt="Evening news" class="card-logo" />
+                <p class="blue">
+                  Al-Nassr player makes 'difficult' admission about Christiano Ronaldo presence
+                </p>
+                <span class="grey">1 hour ago</span>
+              </div>
+              <img src="images/ronnie1.jpg" alt="" class="desktop-card-img">
+            </div>
+          </div>
+        </div>
+      </section>
+     
+
+      <section class="desktop-news">
+       
+          <a href="#" target="_blank" class="desktop-twitter">
+          <span class="name-info">
+            https://twitter.com/search/cristiano+ronaldo
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </span>
+          <p>Ronaldo on Twitter</p>
+        </a>
+
+        <div class="cards">
+          <div class="twitter-card">
+            <a href="#" target="_blank" >
+            <div class="tweetcard-header">
+              <img src="images/ESpn.jpg" alt="Baxterstorey logo" />
+              <span class="tweetcard-header-info">
+                <h4>Twitter > ESPNFC</h4>
+                <p class="blue">ESPN FC</p>
+              </span>
+            </div>
+          </a>
+            <div class="images">
+              <img src="images/ESPN 1.jpg" alt="first-image" />
+              
+            </div>
+            <p class="tweet-info">
+             Victor Osimhen has beaten Christiano Ronaldo's record for the highest vertical leap for a header in seria A
+            </p>
+            <p class="bottom">
+              Twitter <span class="grey">. 5 hours ago</span>
+            </p>
+          </div>
+          
+            <div class="twitter-card">
+              <a href="#" target="_blank" >
+              <div class="tweetcard-header">
+                <img src="images/janty.jpg" alt="Cristiano Ronaldo smiling" />
+                <span class="tweetcard-header-info">
+                  <h5>Twitter > CFC_Janty</h5>
+                  <p class="blue">Janty</p>
+                </span>
+              </div>
+              </a>
+              <img src="images/ESPN2.jpg" alt="Cristiano Ronaldo in his private jet" />
+              <p class="tweet-info">
+                Sone videos and stories of Christiano Ronaldo the media doesn't want you to see
+                <br> <br>
+                A thread:
+              </p>
+              <p class="bottom">
+                Twitter <span class="grey">. 5 hours ago</span>
+              </p>
+            </div>
+         
+          
+            <div class="twitter-card">
+              <a href="#" target="_blank" >
+              <div class="tweetcard-header">
+                <img src="images/433.jpg" alt="" />
+                <span class="tweetcard-header-info">
+                  <h5>Twitter > 433</h5>
+                  <p class="blue">433</p>
+                </span>
+              </div>
+            </a>
+              <img src="images/ESPN3.jpg" alt="" />
+              <p class="tweet-info">
+                Christiano Ronaldo: 256cm <br>
+                Victor Osimhen: 258cm <br><br>
+                @SerieA's all-time jumping record has been broken 
+              </p>
+              <p class="bottom">
+                Twitter <span class="grey">. 36 mins ago</span>
+              </p>
+            </div>
+          </section>
+         
+
+        </div>
+        
+        <div class="desktop-sideview">
+          <section class="desktop-about">
+            <h3>About</h3>
+            <div id="about">
+            <div class="flex">
+              <i class="fa-solid fa-earth-americas"></i>
+              <a data-attrid="visit_official_site" class="ronsite" href="http://www.cristianoronaldo.com/" data-jsarwt="1" data-usg="AOvVaw1aK76fdue6QyaXpYfR-SPP" data-ved="2ahUKEwiIoP3D1uL8AhUfgv0HHepHBX4Q-TAoAHoECEQQAQ"><span class="site"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"></path></svg></span><span class="sit">cristianoronaldo.com</span></a>
+            </div>
+            <ul>
+              <li>
+                Born: <span class="grey">5 february 1985(age 37 years), </span>
+                <span class="blue"
+                  >Hospital Dr.Nelio Mendonca, Funchal, Portugal</span
+                >
+              </li>
+              <li>
+                Current team:
+                <span class="blue"
+                  >Portugal national football team
+                  <span class="grey">(#7 / Forward)</span></span
+                >
+              </li>
+              <li>
+                Children:
+                <span class="blue"
+                  >Cristiano Ronaldo Jr., Bella Esmeralda, Alana Martina dos Santos
+                  Aveiro, more</span
+                >
+              </li>
+              <li>
+                Dates joined:
+                <span class="grey"
+                  >2021 ( <span class="blue">Manchester United F.C.</span> ), 2018 (
+                  <span class="blue">Juventus F.C.</span>), 2009 (<span class="blue"
+                    >Real Madrid CF</span
+                  >), <span class="blue">more</span></span
+                >
+              </li>
+              <li>Height: <span class="grey">1.87</span></li>
+              <li>Salary: <span class="grey">26.8 million GBP (2023)</span></li>
+              <li>
+                Awards:
+                <span class="blue"
+                  >European Golden Shoe, Ballon d'Or Dream Team, more</span
+                >
+              </li>
+            </ul>
+          </div>
+            <div class="about-bottom">
+              <span class="italics">Claim this knowledge panel</span>
+              <p class="grey">Feedback</p>
+            </div>
+          </section>
+          <section class="desktop-profiles RON">
+            <h3>Profiles</h3>
+            <div class="socials">
+            <div class="social">
+              <div class="social-img">
+              <img src="images/insta-logo.png" alt="Instagram logo" />
+            </div>
+              <p class="small">Instagram</p>
+            </div>
+            <div class="social">
+              <div class="social-img">
+              <img src="images/twitter.png" alt="A logo of Twitter" />
+            </div>
+              <p>Twitter</p>
+            </div>
+            <div class="social">
+              <div class="social-img">
+              <img src="images/facebook-logo.png" alt="Facebook Logo" />
+              </div>
+              <p>Facebook</p>
+            </div>
+            <div class="social">
+              <div class="social-img">
+              <img src="images/youtube.png" alt="Youtube Logo" />
+              </div>
+              <p>youtube</p>
+            </div>
+          </div>
+          </section>
+          <section class="desktop-searches">
+            <h3>People also search for</h3>
+            <div class="search-cards">
+              <div class="search-card">
+                <a href="https://www.google.com/search?sxsrf=ALiCzsZveZWLloiLOIa3Zn3aQ7y_4q6oDw:1672318315634&si=AC1wQDDagiMg03ncxeOQZbwVe-CJxRCchC-jr2hCPTxjc9wbgM18_jx1g24IjQW5934LCXSvMIf88CYB27fjz161R2GOr2upMMSxJaoBvhulU49d6kNGFpN9Z1kWDJVpETqE86G9W4JyuEuVVSCFb1Lkj2xcR-F2ORoaBwxVaw9q0YMLSQ7OoTbYtpD_qPEauFHy-w6kcKZODSIqA_dI-JcEgGxP_AozAxrNi9XQCW6gKHosEe_pe1jyXK5wLcqnAXYku3kLLS1G3CRcWnbL1XJUR3tjy3t2ioAn3YuQH71urKhjFtZn8RU%3D&q=Lionel+Messi&sa=X&ved=2ahUKEwiZ8J2Z7578AhV_8rsIHY3KCFsQs9oBKAF6BAh5EAY" target="_blank" >
+                <p>Lionel Messi</p>
+              </a>
+              </div>
+              <div class="search-card">
+                <a href="#" target="_blank" >
+                <p>Georgina Rodriguez</p>
+              </a>
+              </div>
+              <div class="search-card">
+                <a href="#" target="_blank" >
+               <p>Neymar</p>
+              </a>
+              </div>
+              <div class="search-card">
+                <a href="#" target="_blank" >
+             
+                <p>Ronaldo</p>
+              </a>
+              </div>
+            </div>
+            <span class="more-stats"
+            >See more <i class="fa-solid fa-arrow-right"></i>
+          </span>
+          </section>
+
+        </div>
+      </section>
+      
+      </section>   
+
+      <section class="ronniepost">
+        <div class="flex">
+          <img src="images/wikipedia-logo.png" alt="Wikipedia logo" />
+          <div class="ronniepost-info">
+            <p>Wikipedia</p>
+            <span
+              >https://en.m.wikipedia.org > <span class="grey">wiki> Christiano_Ronaldo</span></span>
+          </div>
+        </div>
+        <h3 class="blue">Cristiano Ronaldo</h3>
+        <div class="ronniepost-details">
+        <p>
+          <span class="grey">1 hour ago - </span>Cristiano Ronaldo dos Santos
+          Aveiro GOIH ComM is a Portuguese professional footballer who plays as
+          a forward and captains the Portugal...
+        </p>
+        <img src="images/cr71.jpeg" alt="Cristiano Ronaldo">
+      </div>
+        <div class="flex">
+          <div class="flex-info">
+            <p class="blue">Early life</p>
+          </div>
+          <div class="flex-info">
+            <p class="blue">Club career</p>
+          </div>
+        </div>
+      </section>
+
+     
+     
+
+      <section class="more-result ">
+        <div class="ronniepost">
+        <div class="posts">
+             <span>https://www.mirror.co.uk > Sports > Football</span>
+             <a href="#">
+             <h3 class="blue"> Cristiano Ronaldo - latest news, net worth and boots - The Mirror</h3>
+            </a>
+             <span>10 hours ago — One of the world's best football players, Cristiano Ronaldo set many records while playing for Manchester United, Real Madrid, Juventus and the Portuguese ...
+              Net worth: $500m
+              Boots: Nike CR7</span>
+        </div>
+
+      </div>
+      <div class="ronniepost">
+        <div class="posts">
+             <span>https://www.dailymail.co.uk > Sports > cristianoronaldo</span>
+             <a href="#">
+             <h3 class="blue"> Cristiano Ronaldo news, Stats and Updates | Daily Mail Online</h3>
+            </a>
+             <span>20 hours ago — Get the latest on Al-Nassr forward Cristiano Ronaldo after the veteran joined the Saudi club in huge deal.</span>
+        </div>
+
+      </div>
+      <div class="ronniepost">
+        <div class="posts">
+             <span>https://www.christianoronaldo.com</span>
+             <a href="#">
+             <h3 class="blue"> Cristiano Ronaldo | Official Website</h3>
+            </a>
+             <span>Cristiano Ronaldo's highlights and achievements. View Highlights. Your browser does not support the video tag. CR7 Eyewear. A contemporary collection able ...</span>
+        </div>
+      </div>
+      <div class="ronniepost">
+        <div class="posts">
+             <span>https://www.realmadrid.com</span>
+             <a href="#">
+             <h3 class="blue"> Cristiano Ronaldo | Real Madrid CF</h3>
+            </a>
+             <span>Real Madrid's all-time leading goalscorer. Position: Forward Competitive appearances: 438. Goals: 451. International caps with Portugal: 154
+              Date of birth: 05/02/1985</span>
+        </div>
+
+      </div>
+      
+      </section>
+
+      <section class="more-result">
+        <div class="ronniepost">
+        <div class="card-header">
+          <div class="card-header1">
+            <div class="page">
+              <h3>Fbref.com</h3>
+              <a href=""
+                >Fbref
+                <span class="grey">> spi...</span></a
+              >
+            </div>
+          </div>
+        </div>
+          <h3 class="blue">Cristiano Ronaldo Stats, Goals, Records, Assists cups and more</h3>
+          <p>
+            Check out the latest domestic and international stats, match logs, goals, weight and more for christiano ronaldo playing for
+            Portugal men's national...
+          </p>
+        </div>
+
+      </section>
+
+      
+
+      <section class="realmadrid RON">
+        <div class="ronniepost">
+        <div class="card-header">
+          <div class="card-header1">
+            <div class="page">
+              <h3>Transfermarkt</h3>
+              <a href="#"
+                >https://www.Transfermarkt.com
+                <span class="grey">> history</span></a
+              >
+            </div>
+          </div>
+        </div>
+          <h3 class="blue">Cristiano Ronaldo - player profile 22/23</h3>
+          <p>
+            Cristiano Ronaldo, 38, from Portugal
+            > Al-Nassr FC, since 2022 > Centre-Forward > Market Value: 20.00m > 
+            Feb 5, 1985 in Funchal, Portugal
+          </p>
+        </div>
+      </section>
+
+      <section class="ronniepost RON">
+        <h3>Images</h3>
+        <div class="img-container">
+          <img src="images/cr71.jpeg" alt="" />
+          <img src="images/cr72.jpeg" alt="" />
+          <img src="images/cr73.jpeg" alt="" />
+          <img src="images/cr74.jpeg" alt="" />
+          <img src="images/cr75.jpeg" alt="" />
+          <img src="images/cr76.jpeg" alt="" />
+          <img src="images/cr77.jpeg" alt="" />
+          <img src="images/cr78.jpeg" alt="" />
+          <img src="images/cr79.jpeg" alt="" />
+          <img src="images/cr710.jpeg" alt="" />
+          <img src="images/cr711.jpeg" alt="" />
+        </div>
+      </section>
+
+      
+
+      <section class="videos RON">
+        <h3>Videos</h3>
+        <div class="video1">
+          <a href="" target="_blank" >
+         <img src="images/vid1.jpeg" alt="CR7">
+         <i class="fa-regular fa-circle-play"></i>
+        </a>
+         <div class="video1-info">
+          <p class="blue">Unforgettable Moments of Cristiano Ronaldo 2022</p>
+          <p>Youtube <span class="grey">SLIZHENKOV | HD</span></p>
+          <p class="grey">2 days ago</p>
+         </div>
+        </div>
+        <div class="video1">
+          <a href="#" target="_blank" >
+         <img src="images/vid2.jpeg" alt="CR7">
+        </a>
+         <div class="video1-info">
+          <p class="blue"> Cristiano Ronaldo LAST SEASON at Real Madrid</p>
+          <p>Youtube <span class="grey">MadridistaTV</span></p>
+          <p class="grey">4 days ago</p>
+         </div>
+        </div>
+        <div class="video1">
+          <a href="#" target="_blank" >
+         <img src="images/vid3.jpeg" alt="CR7">
+        </a>
+         <div class="video1-info">
+          <p class="blue">Cristiano Ronaldo: I hope he stays in Premier Leagu...</p>
+          <p>Sky Sports <span class="grey"> . Sky Sports</span></p>
+          <p class="grey">3 days ago</p>
+         </div>
+        </div>
+        <div class="more-stats"> 
+          <p> More short videos </p>
+          <i class="fa-solid fa-greater-than"></i>
+        </div>
+      </section>
+
+    
+    <section class="other-searches">
+      <h3>Related searches</h3>
+      <div class="desktop-searches">
+        <div class="desktop-search1">
+      <div class="related-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <a
+          href="https://www.google.com/search?sxsrf=ALiCzsajNyOb9rxcFSSAPDI-EdmgmHwYNg:1671471097122&q=Cristiano+Ronaldo+net+worth&sa=X&ved=2ahUKEwjm1PuHm4b8AhUC9rsIHcPCD8QQ1QJ6BQjUARAB"
+          target="_blank"
+          >Cristiano Ronaldo net worth</a
+        >
+      </div>
+      <div class="related-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <a
+          href="https://www.google.com/search?sxsrf=ALiCzsajNyOb9rxcFSSAPDI-EdmgmHwYNg:1671471097122&q=Cristiano+Ronaldo+Jr&sa=X&ved=2ahUKEwjm1PuHm4b8AhUC9rsIHcPCD8QQ1QJ6BQjWARAB"
+          target="_blank"
+          >Cristiano Ronaldo Jr</a
+        >
+      </div>
+      <div class="related-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <a
+          href="https://www.google.com/search?sxsrf=ALiCzsajNyOb9rxcFSSAPDI-EdmgmHwYNg:1671471097122&q=Cristiano+Ronaldo+wife&sa=X&ved=2ahUKEwjm1PuHm4b8AhUC9rsIHcPCD8QQ1QJ6BQjVARAB"
+          target="_blank"
+          >Cristiano Ronaldo wife</a
+        >
+      </div>
+      <div class="related-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <a
+          href="https://www.google.com/search?sxsrf=ALiCzsajNyOb9rxcFSSAPDI-EdmgmHwYNg:1671471097122&q=Cristiano+Ronaldo+Instagram&sa=X&ved=2ahUKEwjm1PuHm4b8AhUC9rsIHcPCD8QQ1QJ6BQjZARAB"
+          target="_blank"
+          >Cristiano Ronaldo Instagram</a
+        >
+      </div>
+    </div>
+      <div class="desktop-search2">
+      <div class="related-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <a
+          href="https://www.google.com/search?sxsrf=ALiCzsajNyOb9rxcFSSAPDI-EdmgmHwYNg:1671471097122&q=Cristiano+Ronaldo+Chelsea&sa=X&ved=2ahUKEwjm1PuHm4b8AhUC9rsIHcPCD8QQ1QJ6BQjaARAB"
+          target="_blank"
+          >Cristiano Ronaldo Chelsea</a
+        >
+      </div>
+      <div class="related-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <a
+          href="https://www.google.com/search?sxsrf=ALiCzsajNyOb9rxcFSSAPDI-EdmgmHwYNg:1671471097122&q=Cristiano+Ronaldo+Transfermarkt&sa=X&ved=2ahUKEwjm1PuHm4b8AhUC9rsIHcPCD8QQ1QJ6BQjbARAB"
+          target="_blank"
+          >Cristiano Ronaldo Transfermarkt</a
+        >
+      </div>
+      <div class="related-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <a
+          href="#"
+          target="_blank"
+          >Cristiana Ronaldo Wikipedia</a
+        >
+      </div>
+      <div class="related-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <a
+          href="https://www.google.com/search?sxsrf=ALiCzsajNyOb9rxcFSSAPDI-EdmgmHwYNg:1671471097122&q=Cristiano+Ronaldo+News&sa=X&ved=2ahUKEwjm1PuHm4b8AhUC9rsIHcPCD8QQ1QJ6BQjTARAB"
+          target="_blank"
+          >Cristiano Ronaldo News</a
+        >
+      </div>
+      </div>
+      </div>
+    </section>
+
+      <section class="related-searches">
+        <h3>Related searches</h3>
+        <div class="related-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a
+            href="https://www.google.com/search?sxsrf=ALiCzsajNyOb9rxcFSSAPDI-EdmgmHwYNg:1671471097122&q=Cristiano+Ronaldo+net+worth&sa=X&ved=2ahUKEwjm1PuHm4b8AhUC9rsIHcPCD8QQ1QJ6BQjUARAB"
+            target="_blank"
+            >Cristiano Ronaldo net worth</a>
+        </div>
+        <div class="related-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a
+            href="https://www.google.com/search?sxsrf=ALiCzsajNyOb9rxcFSSAPDI-EdmgmHwYNg:1671471097122&q=Cristiano+Ronaldo+Jr&sa=X&ved=2ahUKEwjm1PuHm4b8AhUC9rsIHcPCD8QQ1QJ6BQjWARAB"
+            target="_blank"
+            >Cristiano Ronaldo Jr</a
+          >
+        </div>
+        <div class="related-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a
+            href="https://www.google.com/search?sxsrf=ALiCzsajNyOb9rxcFSSAPDI-EdmgmHwYNg:1671471097122&q=Cristiano+Ronaldo+wife&sa=X&ved=2ahUKEwjm1PuHm4b8AhUC9rsIHcPCD8QQ1QJ6BQjVARAB"
+            target="_blank"
+            >Cristiano Ronaldo wife</a
+          >
+        </div>
+        <div class="related-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a
+            href="https://www.google.com/search?sxsrf=ALiCzsajNyOb9rxcFSSAPDI-EdmgmHwYNg:1671471097122&q=Cristiano+Ronaldo+Instagram&sa=X&ved=2ahUKEwjm1PuHm4b8AhUC9rsIHcPCD8QQ1QJ6BQjZARAB"
+            target="_blank"
+            >Cristiano Ronaldo Instagram</a
+          >
+        </div>
+        <div class="related-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a
+            href="https://www.google.com/search?sxsrf=ALiCzsajNyOb9rxcFSSAPDI-EdmgmHwYNg:1671471097122&q=Cristiano+Ronaldo+Chelsea&sa=X&ved=2ahUKEwjm1PuHm4b8AhUC9rsIHcPCD8QQ1QJ6BQjaARAB"
+            target="_blank"
+            >Cristiano Ronaldo Chelsea</a
+          >
+        </div>
+        <div class="related-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a
+            href="https://www.google.com/search?sxsrf=ALiCzsajNyOb9rxcFSSAPDI-EdmgmHwYNg:1671471097122&q=Cristiano+Ronaldo+Transfermarkt&sa=X&ved=2ahUKEwjm1PuHm4b8AhUC9rsIHcPCD8QQ1QJ6BQjbARAB"
+            target="_blank"
+            >Cristiano Ronaldo Transfermarkt</a
+          >
+        </div>
+        <div class="related-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a
+            href="https://www.google.com/search?sxsrf=ALiCzsajNyOb9rxcFSSAPDI-EdmgmHwYNg:1671471097122&q=Cristiano+Ronaldo+Wikipedia&sa=X&ved=2ahUKEwjm1PuHm4b8AhUC9rsIHcPCD8QQ1QJ6BQjYARAB"
+            target="_blank"
+            >Cristiana Ronaldo Wikipedia</a
+          >
+        </div>
+        <div class="related-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a
+            href="https://www.google.com/search?sxsrf=ALiCzsajNyOb9rxcFSSAPDI-EdmgmHwYNg:1671471097122&q=Cristiano+Ronaldo+News&sa=X&ved=2ahUKEwjm1PuHm4b8AhUC9rsIHcPCD8QQ1QJ6BQjTARAB"
+            target="_blank"
+            >Cristiano Ronaldo News</a
+          >
+        </div>
+      </section>
+      
+      <div class="desktop-gooogle">
+        <ul class="desktop-gooogle1">
+          <li class="blue"><a href="">G</a></li>
+          <li class="red"><a href="">o</a></li>
+          <li class="orange"><a href="">o</a></li>
+          <li class="orange"><a href="">o</a></li>
+          <li class="orange"><a href="">o</a></li>
+          <li class="orange"><a href="">o</a></li>
+          <li class="orange"><a href="">o</a></li>
+          <li class="orange"><a href="">o</a></li>
+          <li class="orange"><a href="">o</a></li>
+          <li class="orange"><a href="">o</a></li>
+          <li class="orange"><a href="">o</a></li>
+          <li class="blue"><a href="">g</a></li>
+          <li class="green"><a href="">l</a></li>
+          <li class="red"><a href="">e</a></li>
+        </ul>
+        <ul class="desktop-gooogle2">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+          <li>10</li>
+        </ul>
+      </div>
+      <footer>
+        <div class="see-more"> 
+          <i class="fa-solid fa-greater-than"></i>
+          <p> See more</p>
+        </div>
+        <p class="grey">Nigeria</p>
+        <div class="lang">
+          <p class="grey">Google offerred in:</p>
+          <div class="languages">
+            <p>English</p>
+            <p class="blue">Hausa</p>
+            <p class="blue">Igbo</p>
+            <p class="blue">Èdè Yorùbà</p>
+            <p class="blue">Naijíriá Píjin</p>
+            <button class="blue">MORE</button>
+          </div>
+        </div>
+        <p>Wuse 1 Abuja - <span class="blue">Based on your past activity</span></p>
+        <p class="blue">Update location</p>
+        <p>Ejigboojoachele@gmail.com <span class="grey"> - Switch account</span></p>
+        <ul>
+          <li class="grey">Dark theme: off</li>
+          <li class="grey">Settings</li>
+          <li class="grey">Help</li>
+          <li class="grey">Feedback</li>
+          </ul>
+          <ul>
+          <li class="grey">Privacy</li>
+          <li class="grey">Terms</li>
+        </ul>
+      </footer>
+
+    </main>
+  </body>
+</html>
